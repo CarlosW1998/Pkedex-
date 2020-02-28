@@ -2,10 +2,12 @@ from src.Twitter_Acess import Acess
 from src.Analyses import SentimentalAnalyses
 import matplotlib.pyplot as plt
 import numpy as np
+import sys
+
 
 path = "model.pickle"
-
-api = Acess()
+print(sys.argv[1:])
+api = Acess(*sys.argv[1:])
 model = SentimentalAnalyses()
 model.load(path=path)
 

@@ -1,12 +1,12 @@
 import tweepy
 
 class Acess():
-    def __init__(self):
+    def __init__(self, access_token, access_token_secret, consumer_key, consumer_secret):
         #Variables that contains the user credentials to access Twitter API 
-        self.access_token = ""
-        self.access_token_secret = ""
-        self.consumer_key = ""
-        self.consumer_secret = ""
+        self.access_token = access_token
+        self.access_token_secret = access_token_secret
+        self.consumer_key = consumer_key
+        self.consumer_secret = consumer_secret
         # Creating the authentication object
         self.auth = tweepy.OAuthHandler(self.consumer_key, self.consumer_secret)
         # Setting your access token and secret
