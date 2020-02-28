@@ -5,6 +5,8 @@ After training the model, its necessary conect to Twetter API and get some twett
 # Run The Container
 To start the docker container run the comands
 > docker build -t senta:1.0 .
+> 
 > docker run -p 8888:8888  senta:1.0
+
 Open the link will apear in comand line in your browser and open the Main.ipynb 
 Set the variables, and execute the code.
